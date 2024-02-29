@@ -19,15 +19,86 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>salom</h1>
+    <header class="header" id="header">
+        <div class="header__container" id="headerContainer">
+            <div class="header__logo" id="headerLogo">
+                <img src="./logomob.svg" alt="">
+            </div>
+            <div class="header__list" id="headerList">
+                <div class="list--menu">
+                    <ul>
+                        <li list--menu--lists><a href="" class="menu--link">Asosiy</a></li>
+                        <li list--menu--lists><a href="" class="menu--link">Muhum kunlar</a></li>
+                        <li list--menu--lists><a href="" class="menu--link">Taqvim</a></li>
+                        <li list--menu--lists><a href="" class="menu--link">Online TV</a></li>
+                        <li list--menu--lists><a href="" class="menu--link">Tasbeh</a></li>
+                        <li list--menu--lists><a href="" class="menu--link">Muallif</a></li>
+                    </ul>
+                </div>
+                <div class="ham-menu" id="hamMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <div class="main__container" id="mainContainer">
+            <div class="container__text">
+                <ul>
+                    <li>
+                        <select name="" id="select">
+                            <option value="jizzax">jizzax</option>
+                            <option value="toshkent">Toshkent</option>
+                        </select>
+                    </li>
+                    <li>
+                        <p>Sahrlik</p>
+                        <span id="sahar">00:00</span>
+                    </li>
+                    <li>
+                        <p>Quyosh</p>
+                        <span id="quyosh">0</span>
+                    </li>
+                    <li>
+                        <p>Peshin</p>
+                        <span id="peshin">0</span>
+                    </li>
+                    <li>
+                        <p>Asr</p>
+                        <span id="asr">0</span>
+                    </li>
+                    <li>
+                        <p>Shom iftor</p>
+                        <span id="shom iftor">0</span>
+                    </li>
+                    <li>
+                        <p>Hufton</p>
+                        <span id="hufton">0</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container__time">
+                <div class="time">
+                    <span class="name">00:00</span>
+                    <h2 class="attTime">Bomdod</h2>
+                    <span class="second" id="clock">00:00</span>
+
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script src="./js/main.js"></script>
 </body>
