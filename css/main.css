@@ -1,17 +1,151 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 | @import './tasbeh/';
- *   |         ^^^^^^^^^^^
- *   '
- *   scss\main.scss 5:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import './tasbeh/';\a   \2502          ^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 5:9  root stylesheet";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
+  font-family: "Fraunces", serif;
+  font-family: "Sawarabi Mincho", serif;
 }
+
+.header {
+  max-width: 430px;
+  height: 80px;
+  background: rgb(3, 143, 50);
+  background: linear-gradient(90deg, rgba(3, 143, 50, 0.9) 15%, rgba(3, 143, 50, 0.9) 90%);
+}
+.header .header__container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header .header__container .header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+.header .header__container .header__logo img {
+  width: 100%;
+  height: 40%;
+}
+.header .header__container .header__list {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+.header .header__container .header__list .list--menu {
+  z-index: 11;
+  background: #007336;
+  height: 100vh;
+  width: 100%;
+  max-width: 293px;
+  position: fixed;
+  top: 0;
+  right: -500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.3s ease;
+}
+.header .header__container .header__list .list--menu ul li a {
+  font-size: 28px;
+  color: white;
+  list-style: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+}
+.header .header__container .header__list .list--menu.active {
+  right: 0;
+}
+.header .header__container .header__list .ham-menu {
+  z-index: 12;
+  height: 30px;
+  width: 30px;
+  margin-left: auto;
+  position: relative;
+}
+.header .header__container .header__list .ham-menu span {
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+.header .header__container .header__list .ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.header .header__container .header__list .ham-menu span:nth-child(3) {
+  top: 75%;
+}
+.header .header__container .header__list .ham-menu.active span:nth-child(1) {
+  top: 40%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.header .header__container .header__list .ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.header .header__container .header__list .ham-menu.active span:nth-child(3) {
+  top: 25%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+.main {
+  max-width: 430px;
+  height: 200px;
+  background: rgb(5, 172, 60);
+  background: linear-gradient(90deg, rgba(5, 172, 60, 0.9) 15%, rgba(5, 172, 60, 0.9) 90%);
+}
+.main .main__container {
+  display: flex;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+.main .main__container .container__text {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.main .main__container .container__text ul {
+  width: 100%;
+}
+.main .main__container .container__text ul li {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.main .main__container .container__time {
+  width: 50%;
+  height: 100%;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__container .container__time .time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  border: 4px solid rgb(245, 255, 134);
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */

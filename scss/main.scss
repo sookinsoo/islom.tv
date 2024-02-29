@@ -1,5 +1,147 @@
 @import './global';
-@import './asosiy/asosiy';
 @import './muallif/muallif';
 @import './online/online';
-@import './tasbeh/';
+@import './tasbeh/tasbeh';
+
+.header{
+    max-width: 430px;
+    height: 80px;
+    background: rgb(3, 143, 50);
+    background: linear-gradient(90deg, rgb(3, 143, 50, 0.9) 15%, rgba(3,143,50,0.9) 90%);
+    .header__container{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        .header__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 100%;
+            img{
+                width:100%;
+                height: 40%;
+            }
+        }
+        .header__list{
+            display: flex;
+            align-items: center;
+            width: 20%;
+            height: 100%;
+            .list--menu{
+                z-index: 11;
+                background: #007336;
+                height: 100vh;
+                width: 100%;
+                max-width: 293px;
+                position: fixed;
+                top: 0;
+                right: -500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 3rem;
+                transition: .3s ease;
+                ul li a{
+                    font-size: 28px;
+                    color: white;
+                    list-style: none;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 900;
+                }
+            }
+            .list--menu.active{
+                right: 0;
+            }
+            .ham-menu{
+                z-index: 12;
+                height: 30px;
+                width: 30px;
+                margin-left: auto;
+                position: relative;
+                span {
+                    height: 4px;
+                    width: 100%;
+                    background-color: #fff;
+                    border-radius: 25px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: .3s ease;
+                
+                }
+                span:nth-child(1) {
+                    top: 25%;
+                }
+                
+                span:nth-child(3) {
+                    top: 75%;
+                }
+            }
+            .ham-menu.active span:nth-child(1) {
+                top: 40%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            
+            }
+            
+            .ham-menu.active span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .ham-menu.active span:nth-child(3) {
+                top: 25%;
+                transform: translate(-50%, 50%) rotate(-45deg);
+            }
+        }
+    }
+}
+.main{
+    max-width: 430px;
+    height: 200px;
+    background: rgb(5,172,60);
+    background: linear-gradient(90deg, rgba(5,172,60,0.9) 15%, rgba(5,172,60,0.9) 90%);
+    .main__container{
+        display: flex;
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        .container__text{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            ul {
+                width: 100%;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 80%;
+                }
+            }
+        }
+        .container__time{
+            width: 50%;
+            height: 100%;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .time{
+                display: flex;
+                flex-direction: column  ;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                height: 80%;
+                border: 4px solid rgb(245, 255, 134);
+                border-radius: 50%;
+
+            }
+        }
+    }
+}
